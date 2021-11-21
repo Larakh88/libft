@@ -32,6 +32,6 @@ char	*ft_strrchr(const char *str, int c)
 		i--;
 	}
 	if (str[i] == (char)c)
-		return ((char *)(str + i));
+		return ((char *)str);
 	return (NULL);
 }
