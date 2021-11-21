@@ -80,8 +80,10 @@ char	**ft_split(char const *s, char c)
 	j = 0;
 	k = 0;
 	d = (char*)s;
+	if (!s)
+		return (0);
 	ptr = malloc(sizeof(char *) * ft_count(s, c) + 1);
-	if (!ptr || !s)
+	if (!ptr)
 		return (0);
 	while (i < ft_count(s, c))
 	{
