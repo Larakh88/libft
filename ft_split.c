@@ -6,7 +6,7 @@
 /*   By: lel-khou <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/15 09:57:23 by lel-khou          #+#    #+#             */
-/*   Updated: 2021/11/21 16:11:31 by lel-khou         ###   ########.fr       */
+/*   Updated: 2021/11/22 08:57:53 by lel-khou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -79,7 +79,7 @@ char	**ft_split(char const *s, char c)
 	i = 0;
 	j = 0;
 	k = 0;
-	d = (char*)s;
+	d = (char *)s;
 	if (!s)
 		return (0);
 	ptr = malloc(sizeof(char *) * ft_count(s, c) + 1);
