@@ -29,7 +29,7 @@ CFILES	= ft_isascii.c ft_isprint.c ft_isalpha.c ft_isdigit.c ft_isalnum.c \
 			ft_substr.c ft_strjoin.c ft_strtrim.c ft_split.c ft_strmapi.c ft_striteri.c
 
 BONUS	= ft_lstnew.c ft_lstadd_front.c ft_lstsize.c ft_lstlast.c ft_lstadd_back.c \
-		  ft_lstdelone.c ft_lstclear.c
+		  ft_lstdelone.c ft_lstclear.c ft_lstiter.c
 
 OBJS	= $(CFILES:.c=.o)
 
