@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lel-khou <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: lel-khou <lel-khou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/15 09:57:23 by lel-khou          #+#    #+#             */
-/*   Updated: 2021/11/22 08:57:53 by lel-khou         ###   ########.fr       */
+/*   Updated: 2024/02/09 16:27:01 by lel-khou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,9 +23,9 @@ static size_t	ft_count(char const *s, char c)
 	{
 		while (s[i] == c)
 			i++;
-		if (s[i] == 0)
+		if (s[i] == '\0')
 			break ;
-		if (s[i + 1] == c || s[i + 1] == 0)
+		if (s[i + 1] == c || s[i + 1] == '\0')
 			j++;
 		i++;
 	}
@@ -37,7 +37,7 @@ static size_t	ft_start(const char *s, char c)
 	size_t	start;
 
 	start = 0;
-	while (s != 0)
+	while (s && *s)
 	{
 		if (*s == c && *s != 0)
 		{
@@ -55,7 +55,7 @@ static size_t	ft_end(const char *s, char c)
 	size_t	end;
 
 	end = 0;
-	while (s != 0)
+	while (s && *s)
 	{
 		if (*s != c && *s != 0)
 		{	
@@ -82,7 +82,7 @@ char	**ft_split(char const *s, char c)
 	d = (char *)s;
 	if (!s)
 		return (0);
-	ptr = malloc(sizeof(char *) * ft_count(s, c) + 1);
+	ptr = (char **)malloc(sizeof(char *) * (ft_count(s, c) + 1));
 	if (!ptr)
 		return (0);
 	while (i < ft_count(s, c))
