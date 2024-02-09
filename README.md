@@ -8,16 +8,16 @@ The **'libft'** project at School 42 is a fundamental project that requires stud
 2. [Usage](#Usage)
 3. [Functions](#Functions)
 
-# Introduction
+## Introduction
 The **'libft'** project is aimed at developing a library of fundamental C functions, including those from the standard library (libc). These functions are written from scratch to understand their underlying mechanisms and improve programming skills in C.
 
-# Usage
+## Usage
 To use the **'libft'** library in your projects, follow these steps:
 1. Clone this repository
 2. Compile the library:
 ```make all```
 
-# Functions
+## Functions
 The **'libft'** library includes various categories of functions, such as:
 
 * Memory manipulation functions (e.g., **`ft_memset`**, **`ft_memcpy`**, **`ft_memmove`**)
